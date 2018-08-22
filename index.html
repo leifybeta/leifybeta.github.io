@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+    <title>Leify.ca</title>
+    <link rel="icon" href="images/icon/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <script type="text/javascript" src="links.js"></script>
+    <script type="text/javascript" src="linkloader.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body onload="load()">
+
+    <div id="nav" class="row">
+        <div id="left_section" class="col-0 col-sm-0 col-md-0 col-lg-1 col-xl-2"></div>
+        <div id="link_section" class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-8">
+            <img src="images/icon/iconfull.png" alt="logo" id="navlogo" />
+            <ul>
+                <li class="hrefnav"><a href="index.html">Home</a></li>
+                <li class="vchar">|</li>
+                <li class="hrefnav"><a class="latestarticleindex">Latest Article</a></li>
+                <li class="vchar">|</li>
+                <li class="hrefnav"><a href="reviews.html">Reviews</a></li>
+                <li class="vchar">|</li>
+                <li class="hrefnav"><a href="articles.html">Articles</a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown">
+            <img src="images/icon/iconfull.png" alt="logo" id="navlogo" />
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a class="latestarticleindex">Latest Article</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="articles.html">Articles</a>
+            </div>
+        </div>
+
+        <div id="right_section" class="col-0 col-sm-0 col-md-0 col-lg-1 col-xl-2"></div>
+    </div>
+
+
+    
+
+
+    <div class="row">
+        <div id="left_section" class="col-0 col-sm-0 col-md-1 col-lg-2 col-xl-2"></div>
+        <div id="link_section" class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8">
+
+
+            <br /><br /><br /><br />
+
+
+            <div class="individual_link container">
+                <a id="link" class="row">
+                    <div class="col-0 col-sm-0 col-md-4 col-lg-3 col-xl-2 imgcontain">
+                        <span class="helper"></span><img class=" col-12" id="articleimg" src="" alt="article header img" />
+                    </div>
+                    <div class="col-0 col-sm-12 col-md-8 col-lg-9 col-xl-10 textcontain">
+                        <h1 id="title"></h1>
+                        <h4 id="subtitle"></h4>
+                        <div class="h6contain">
+                            <h6 id="author"></h6>
+                            <h6> | </h6>
+                            <h6 id="date"></h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!--<div class="individual_link container">
+                <a id="link2" class="row">
+                    <div class="col-0 col-sm-0 col-md-4 col-lg-3 col-xl-2 imgcontain">
+                        <span class="helper"></span><img class=" col-12" id="articleimg2" src="" alt="article header img" />
+                    </div>
+                    <div class="col-0 col-sm-12 col-md-8 col-lg-9 col-xl-10 textcontain">
+                        <h1 id="title2"></h1>
+                        <h4 id="subtitle2"></h4>
+                        <div class="h6contain">
+                            <h6 id="author2"></h6>
+                            <h6> | </h6>
+                            <h6 id="date2"></h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="individual_link container">
+                <a id="link3" class="row">
+                    <div class="col-0 col-sm-0 col-md-4 col-lg-3 col-xl-2 imgcontain">
+                        <span class="helper"></span><img class=" col-12" id="articleimg3" src="" alt="article header img" />
+                    </div>
+                    <div class="col-0 col-sm-12 col-md-8 col-lg-9 col-xl-10 textcontain">
+                        <h1 id="title3"></h1>
+                        <h4 id="subtitle3"></h4>
+                        <div class="h6contain">
+                            <h6 id="author3"></h6>
+                            <h6> | </h6>
+                            <h6 id="date3"></h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="individual_link container">
+                <a id="link4" class="row">
+                    <div class="col-0 col-sm-0 col-md-4 col-lg-3 col-xl-2 imgcontain">
+                        <span class="helper"></span><img class=" col-12" id="articleimg4" src="" alt="article header img" />
+                    </div>
+                    <div class="col-0 col-sm-12 col-md-8 col-lg-9 col-xl-10 textcontain">
+                        <h1 id="title4"></h1>
+                        <h4 id="subtitle4"></h4>
+                        <div class="h6contain">
+                            <h6 id="author4"></h6>
+                            <h6> | </h6>
+                            <h6 id="date4"></h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="individual_link container">
+                <a id="link5" class="row">
+                    <div class="col-0 col-sm-0 col-md-4 col-lg-3 col-xl-2 imgcontain">
+                        <span class="helper"></span><img class=" col-12" id="articleimg5" src="" alt="article header img" />
+                    </div>
+                    <div class="col-0 col-sm-12 col-md-8 col-lg-9 col-xl-10 textcontain">
+                        <h1 id="title5"></h1>
+                        <h4 id="subtitle5"></h4>
+                        <div class="h6contain">
+                            <h6 id="author5"></h6>
+                            <h6> | </h6>
+                            <h6 id="date5"></h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="individual_link container">
+                <a id="link6" class="row">
+                    <div class="col-0 col-sm-0 col-md-4 col-lg-3 col-xl-2 imgcontain">
+                        <span class="helper"></span><img class=" col-12" id="articleimg6" src="" alt="article header img" />
+                    </div>
+                    <div class="col-0 col-sm-12 col-md-8 col-lg-9 col-xl-10 textcontain">
+                        <h1 id="title6"></h1>
+                        <h4 id="subtitle6"></h4>
+                        <div class="h6contain">
+                            <h6 id="author6"></h6>
+                            <h6> | </h6>
+                            <h6 id="date6"></h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="individual_link container">
+                <a id="link7" class="row">
+                    <div class="col-0 col-sm-0 col-md-4 col-lg-3 col-xl-2 imgcontain">
+                        <span class="helper"></span><img class=" col-12" id="articleimg7" src="" alt="article header img" />
+                    </div>
+                    <div class="col-0 col-sm-12 col-md-8 col-lg-9 col-xl-10 textcontain">
+                        <h1 id="title7"></h1>
+                        <h4 id="subtitle7"></h4>
+                        <div class="h6contain">
+                            <h6 id="author7"></h6>
+                            <h6> | </h6>
+                            <h6 id="date7"></h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="individual_link container">
+                <a id="link8" class="row">
+                    <div class="col-0 col-sm-0 col-md-4 col-lg-3 col-xl-2 imgcontain">
+                        <span class="helper"></span><img class=" col-12" id="articleimg8" src="" alt="article header img" />
+                    </div>
+                    <div class="col-0 col-sm-12 col-md-8 col-lg-9 col-xl-10 textcontain">
+                        <h1 id="title8"></h1>
+                        <h4 id="subtitle8"></h4>
+                        <div class="h6contain">
+                            <h6 id="author8"></h6>
+                            <h6> | </h6>
+                            <h6 id="date8"></h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="individual_link container">
+                <a id="link9" class="row">
+                    <div class="col-0 col-sm-0 col-md-4 col-lg-3 col-xl-2 imgcontain">
+                        <span class="helper"></span><img class=" col-12" id="articleimg9" src="" alt="article header img" />
+                    </div>
+                    <div class="col-0 col-sm-12 col-md-8 col-lg-9 col-xl-10 textcontain">
+                        <h1 id="title9"></h1>
+                        <h4 id="subtitle9"></h4>
+                        <div class="h6contain">
+                            <h6 id="author9"></h6>
+                            <h6> | </h6>
+                            <h6 id="date9"></h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="individual_link container">
+                <a id="link10" class="row">
+                    <div class="col-0 col-sm-0 col-md-4 col-lg-3 col-xl-2 imgcontain">
+                        <span class="helper"></span><img class=" col-12" id="articleimg10" src="" alt="article header img" />
+                    </div>
+                    <div class="col-0 col-sm-12 col-md-8 col-lg-9 col-xl-10 textcontain">
+                        <h1 id="title10"></h1>
+                        <h4 id="subtitle10"></h4>
+                        <div class="h6contain">
+                            <h6 id="author10"></h6>
+                            <h6> | </h6>
+                            <h6 id="date10"></h6>
+                        </div>
+                    </div>
+                </a>-->
+        </div>
+
+
+
+
+    </div>
+    <div id="right_section" class="col-0 col-sm-0 col-md-1 col-lg-2 col-xl-2"></div>
+    </div>
+</body>
+</html>
